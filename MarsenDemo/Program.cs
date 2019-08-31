@@ -1,4 +1,5 @@
-﻿using ParallelProcessPractice.Core;
+﻿using System;
+using ParallelProcessPractice.Core;
 
 namespace MarsenDemo
 {
@@ -7,7 +8,8 @@ namespace MarsenDemo
         static void Main(string[] args)
         {
             TaskRunnerBase run = new MarsenTaskRunner();
-            run.ExecuteTasks(100); ;
+            run.ExecuteTasks(100);
+            Console.ReadLine();
         }
     }
 }
